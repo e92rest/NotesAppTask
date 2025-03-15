@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Заметки";
+}
+
+<h1>Мои заметки</h1>
+
+<a class="btn btn-primary" asp-page="Create">Создать новую заметку</a>
+
+@foreach (var note in Model.Notes)
+{
+    <div style="border: 1px solid #ccc; margin-bottom: 1em; padding: 1em; background: white;">
+        <strong>@note.Title</strong><br />
+        <div style="border: 1px solid #ccc; padding: 1em; background: white;">
+            @Html.Raw(note.Content)
+        </div>
+        <div>
+            <a asp-page="Edit" asp-route-id="@note.Id">Редактировать</a> |
+            <a asp-page-handler="Delete" asp-route-id="@note.Id" onclick="return confirm('Удалить?')">Удалить</a>
+        </div>
+    </div>
+}
