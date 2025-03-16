@@ -3,14 +3,14 @@
 @{
 ViewData["Title"] = "Редактировать заметку";
 }
-
 <h2>Редактировать</h2>
-
+<!-- Форма для POST метода -->
 <form method="post">
-    <input type="hidden" asp-for="Note.Id" />
+    <!-- Скрытое поле с id заметкой -->
+    <input type="hidden" asp-for="Note.Id"/>
     <div>
         <label>Заголовок:</label>
-        <input asp-for="Note.Title" class="form-control" />
+        <input asp-for="Note.Title" class="form-control"/>
     </div>
     <div>
         <label>Содержимое:</label>

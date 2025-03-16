@@ -29,3 +29,4 @@
 /Users/vsevolodmikheev/RiderProjects/NotesAppTask/NotesAppTask/obj/Debug/net8.0/NotesAppTask.genruntimeconfig.cache
 /Users/vsevolodmikheev/RiderProjects/NotesAppTask/NotesAppTask/obj/Debug/net8.0/ref/NotesAppTask.dll
 /Users/vsevolodmikheev/RiderProjects/NotesAppTask/NotesAppTask/bin/Debug/net8.0/notes.json
+/Users/vsevolodmikheev/RiderProjects/NotesAppTask/NotesAppTask/obj/Debug/net8.0/NotesAppTask.sourcelink.json

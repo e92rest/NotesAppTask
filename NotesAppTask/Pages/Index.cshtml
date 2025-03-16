@@ -1,13 +1,13 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Заметки";
+    ViewData["Title"] = "Заметки"; // Заголовок страницы
 }
 
 <h1>Мои заметки</h1>
-
-<a class="btn btn-primary" asp-page="Create">Создать новую заметку</a>
-
+<!-- Кнопка для создания новой заметки -->
+<a class="btn btn-primary" asp-page="Create">Новая заметка</a>
+<!-- Перебираем все заметки из модели и выводим с содержимым, ссылками на редактирование и удаление -->
 @foreach (var note in Model.Notes)
 {
     <div style="border: 1px solid #ccc; margin-bottom: 1em; padding: 1em; background: white;">
